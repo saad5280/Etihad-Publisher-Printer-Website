@@ -1,0 +1,16 @@
+[2026-11-14 20:55:14] local.ERROR: The "->" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"->\" option does not exist. at D:/Laravel-Projects/etihad-website/vendor/symfony/console/Input/ArgvInput.php:211)
+[stacktrace]
+#0 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Input/ArgvInput.php(113): Symfony/Component/Console/Input/ArgvInput->addShortOption('>', NULL)
+#1 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Input/ArgvInput.php(90): Symfony/Component/Console/Input/ArgvInput->parseShortOption('->')
+#2 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Input/ArgvInput.php(77): Symfony/Component/Console/Input/ArgvInput->parseToken('->', true)
+#3 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Input/Input.php(53): Symfony/Component/Console/Input/ArgvInput->parse()
+#4 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Command/Command.php(238): Symfony/Component/Console/Input/Input->bind(Object(Symfony/Component/Console/Input/InputDefinition))
+#5 D:/Laravel-Projects/etihad-website/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Laravel/Pao/Laravel/PaoOutputStyle))
+#6 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Application.php(1154): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#7 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Application.php(380): Symfony/Component/Console/Application->doRunCommand(Object(Laravel/Tinker/Console/TinkerCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 D:/Laravel-Projects/etihad-website/vendor/symfony/console/Application.php(219): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 D:/Laravel-Projects/etihad-website/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(205): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#10 D:/Laravel-Projects/etihad-website/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#11 D:/Laravel-Projects/etihad-website/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#12 {main}
+"} 
